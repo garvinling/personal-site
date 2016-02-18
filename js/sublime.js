@@ -1,7 +1,31 @@
+
+var projects = [
+	{
+		type : 'personal',
+		name : 'git'
+	}
+	
+
+
+]
+
+
+
+
+
 var li = document.getElementById('project-dir').getElementsByTagName('li');
+var projectContent = document.getElementById('project-render');
+var source = document.getElementById('project-template');
+var template = Handlebars.compile(source.innerHTML);
+
+
+projectContent.innerHTML = template(context);
+
 
 
 addEventListeners();
+
+
 
 
 

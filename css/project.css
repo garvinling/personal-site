@@ -2,7 +2,11 @@
 
 	width:500px;
 	height:400px;
+}
 
+.project-container .project-contents {
 
+	padding-top:5px;
+	padding-left:15px;
 
 }
