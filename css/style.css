@@ -126,7 +126,10 @@ body {
 
 }
 
-
+.brief-text { 
+	font-size:17px;
+	margin-top:50px;	
+}
 
 .text-indented {
 	padding-left:10px;
@@ -146,6 +149,8 @@ body {
 }
 
 .project-sidebar .project-directory {
+	
+	font-family: 'Source Sans Pro', sans-serif;
 	color:#7f8c8d;
 
 }
