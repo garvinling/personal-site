@@ -21,9 +21,6 @@ var projects = [
 ]
 
 
-
-
-
 var li = document.getElementById('project-dir').getElementsByTagName('li');
 var projectContent = document.getElementById('project-render');
 var source = document.getElementById('project-template');
@@ -33,9 +30,6 @@ projectContent.innerHTML = template(projects[0]);
 
 
 addEventListeners();
-
-
-
 
 
 function removeAllClasses() {
@@ -55,6 +49,9 @@ function addEventListeners() {
 	for(var i = 0 ; i < li.length ; i ++) {
 
 	   (function(index){
+	   		if(index === 1) 
+	   			li[i].classList.add('project-selected');
+
 
 			li[i].onclick = function(){
 
