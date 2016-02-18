@@ -1,0 +1,179 @@
+body {
+
+	background-color:#34352d;
+	color:white;
+	font-family: 'Inconsolata', 'sans-serif';
+	overflow:hidden;
+}
+
+.container a {
+	color:#2ecc71;
+	text-decoration: none;
+}
+
+.container a:hover , .container a:focus{
+
+	color:#000;
+	background-color:#dcc764;
+	text-decoration:none;
+
+}
+
+.project-directory ul li{
+
+	margin-left: -30px;
+    padding-left: 30px;
+    width: 210px;
+}
+
+.project-directory li:hover {
+   	cursor: default;
+
+}
+
+
+
+.project-selected {
+ 	cursor: default;
+	background-color:#7f8c8d;
+}
+
+.project-selected .child{ 
+
+	color:white;
+}
+
+
+
+
+.header {
+
+	width:100vw;
+	height:20px;
+	position:absolute;
+	top:0;
+	background-color:#eee;
+	z-index:2;
+	border-bottom:1px solid #696969;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.05, #BABABA),
+		color-stop(1, #EDEDED)
+	);
+	background-image: -o-linear-gradient(bottom, #BABABA 5%, #EDEDED 100%);
+	background-image: -moz-linear-gradient(bottom, #BABABA 5%, #EDEDED 100%);
+	background-image: -webkit-linear-gradient(bottom, #BABABA 5%, #EDEDED 100%);
+	background-image: -ms-linear-gradient(bottom, #BABABA 5%, #EDEDED 100%);
+	background-image: linear-gradient(to bottom, #BABABA 5%, #EDEDED 100%);
+}
+
+.button-group{
+
+	width:70px;
+
+}
+
+.button-close{
+
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background-color:#fb605b;
+}
+
+.button-min {
+
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background-color:#febb3e;
+
+}
+
+.button-max {
+
+	width:14px;
+	height:14px;
+	border-radius:7px;
+	background-color:#36c749;
+
+}
+
+
+.container {
+
+	border:1px solid #d7d7d7;
+	width:700px;
+	height:100vh;
+	padding:40px;
+	margin-left:200px;
+	margin-top:20px;
+	float:left;
+}
+
+.project-sidebar {
+
+	position:absolute;
+	left:0;
+	top:20px;
+	height:100vh;
+	width:200px;
+	background-color:#ecf0f1;
+	padding:5px;
+
+}
+
+
+
+.text-indented {
+	padding-left:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+.project-sidebar .title {
+
+	color:#7f8c8d;
+	text-shadow: 0.5px 0.5px #7f8c8d;
+	font-weight:bold;
+	text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+
+
+}
+
+.project-sidebar .project-directory {
+	color:#7f8c8d;
+
+}
+
+
+.parent {
+
+	margin-left:4px;
+	color:black;
+}
+
+.child {
+	margin-left:35px;
+	color:black;
+}
+
+.pink {color:#eb315d;}
+
+.blue {color:#5cd6ef;}
+
+.orange{color:#f1c40f;}
+
+ul {
+	padding-left:15px;
+	list-style-type:none;
+
+}
+
+
+
+
