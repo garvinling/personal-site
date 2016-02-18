@@ -71,13 +71,13 @@
 			<a target="_blank" href="https://github.com/garvinling">github/@garvinling</a>;
 		</p>
 
+
+
+
 		<div class="project-container">
-			<div><span class="blue">var</span> project = { </div>
+			<div><span class="blue">var</span> projectSelected = { </div>
 			<div id="project-render" class="project-contents">	
-
 			</div>
-
-
 			<div>}</div>
 
 
@@ -91,7 +91,12 @@
 
 
 		<script id="project-template" type="text/x-handlebars-template">
-			
+				name : <span class="yellow">'{{name}}'</span>,<br>
+				type : <span class="yellow">'{{type}}'</span>,<br>
+				role : <span class="yellow">'{{role}}'</span>,<br>
+				repo : <span class="yellow"><a href={{repo}}>{{repo}}</a></span>,<br>
+				tech : <span class="yellow">'{{tech}}'</span><br>
+
 		</script>
 
 

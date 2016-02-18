@@ -2,9 +2,20 @@
 var projects = [
 	{
 		type : 'personal',
-		name : 'git'
-	}
-	
+		name : 'Code Meets Coffee',
+		role : 'design + full-stack dev',
+		link : 'coming soon',
+		repo : 'https://github.com/garvinling/code-meets-coffee',
+		tech : 'MeteorJS , React'
+	},
+	{
+		type : 'work',
+		name : 'CLP',
+		role : 'architecture + full-stack dev',
+		link : 'coming soon',
+		repo : 'private',
+		tech : 'Node(Express) , Angular'
+	},
 
 
 ]
@@ -17,9 +28,7 @@ var li = document.getElementById('project-dir').getElementsByTagName('li');
 var projectContent = document.getElementById('project-render');
 var source = document.getElementById('project-template');
 var template = Handlebars.compile(source.innerHTML);
-
-
-projectContent.innerHTML = template(context);
+projectContent.innerHTML = template(projects[0]);
 
 
 
@@ -45,11 +54,24 @@ function addEventListeners() {
 
 	for(var i = 0 ; i < li.length ; i ++) {
 
-		li[i].addEventListener('click',function(){
+	   (function(index){
 
-			removeAllClasses();
-			this.classList.add('project-selected');
+			li[i].onclick = function(){
 
-		},false);
+				removeAllClasses();
+				this.classList.add('project-selected');
+				projectContent.innerHTML = template(projects[index-1]);
+			  
+			  }    
+		})(i);
+
 	}
 }
+
+
+
+
+
+
+
+
