@@ -8,7 +8,10 @@ var projects = [
 		repo : 'https://github.com/garvinling/code-meets-coffee',
 		tech : 'MeteorJS , React',
 		desc : 'A tinder-like web app using the Github API for discovering open source projects.'
-	},
+	}
+];
+
+var workProjects = [
 	{
 		type : 'work',
 		name : 'CoffeeDisplay',
@@ -38,16 +41,16 @@ var projects = [
 		tech : 'Node(Express) , Angular',
 		desc : 'Dashboard to track physical activity steps of patients.'
 
-	},
+	}
+];
 
 
 
 
-]
 
 
 var li                   = document.getElementById('project-dir').getElementsByTagName('li');
-var workli               = document.getElementById('project-dir').getElementsByTagName('li');
+var workli               = document.getElementById('work-dir').getElementsByTagName('li');
 var projectContent       = document.getElementById('project-render');
 var source               = document.getElementById('project-template');
 var template             = Handlebars.compile(source.innerHTML);
@@ -69,6 +72,16 @@ function removeAllClasses() {
 
 }
 
+function removeAllWorkClasses() {
+
+	for(var i = 0; i < workli.length; i++) {
+
+		workli[i].classList.remove('project-selected');
+
+	}
+
+}
+
 
 function addEventListeners() {
 
@@ -80,18 +93,41 @@ function addEventListeners() {
 
 
 			li[i].onclick = function(){
-				if(index > 0 ) {
 
+				if(index > 0 ){
 					removeAllClasses();
+					removeAllWorkClasses();
 					this.classList.add('project-selected');
 					projectContent.innerHTML = template(projects[index-1]);
-				  
 				}
- 
+				
+
 			  }    
 		})(i);
 
 	}
+
+	for(var i = 0 ; i < workli.length ; i ++) {
+
+		(function(index){
+			console.log(index)
+				workli[i].onclick = function(){
+
+					if(index > 0) {
+
+						removeAllClasses();
+						removeAllWorkClasses();
+						this.classList.add('project-selected');
+						projectContent.innerHTML = template(workProjects[index-1]);
+
+					}
+
+				}
+		})(i);
+
+	}
+
+
 }
 
 
