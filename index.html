@@ -40,7 +40,7 @@
 				<li><span class="child">CLP</span></li>
 				<li><span class="child">KP WalkOn</span></li>
 			</ul>
-			<ul>
+			<ul id="work-dir">
 				<li>
 					<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span><span class="parent">work</span>
 				</li>
@@ -52,6 +52,10 @@
 		</div>
 	</div>
 
+
+
+
+
 	<div class="container">
 		<h2>Hi, I'm <span class="pink">Garvin</span></h2>
 		<div class="text-indented">
@@ -59,32 +63,37 @@
 			<h4><span class="orange">Previously</span> controller firmware @ Western Digital</h4>
 		</div> 
 
-
 		<p class="brief-text">
 			<span class="blue">var</span> thoughts <span class="pink">=</span> 
 			<a target="_blank" href="https://twitter.com/GarvinLing">twitter/garvinling</a>;
 			<br>
 			<span class="blue">var</span> blog <span class="pink">=</span> 
-			<a target="_blank" href="https://medium.com/@garvinling">medium/@garvinling</a>;
+			<a target="_blank" href="https://medium.com/@garvinling">medium/garvinling</a>;
 			<br>
 			<span class="blue">var</span> code <span class="pink">=</span> 
-			<a target="_blank" href="https://github.com/garvinling">github/@garvinling</a>;
+			<a target="_blank" href="https://github.com/garvinling">github/garvinling</a>;
 		</p>
 
 
-
-
 		<div class="project-container">
-			<div><span class="blue">var</span> projectSelected = { </div>
+			<div><span class="blue">var</span> projectSelected <span class="pink">=</span>  { </div>
 			<div id="project-render" class="project-contents">	
 			</div>
 			<div>}</div>
-
-
 		</div>
+	
+
+
 
 
 	</div>
+
+
+
+
+
+
+
 
 
 
@@ -95,9 +104,14 @@
 				type : <span class="yellow">'{{type}}'</span>,<br>
 				role : <span class="yellow">'{{role}}'</span>,<br>
 				repo : <span class="yellow"><a target="_blank" href={{repo}}>{{repo}}</a></span>,<br>
-				tech : <span class="yellow">'{{tech}}'</span><br>
+				tech : <span class="yellow">'{{tech}}'</span>,<br>
+				description : <span class="yellow">'{{desc}}'</span><br>
+
 
 		</script>
+
+
+
 
 
 		<script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
