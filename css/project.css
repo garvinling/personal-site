@@ -1,6 +1,6 @@
 .project-container {
 
-	width:500px;
+	width:100%;
 	height:400px;
 	font-size:17px;
 }
@@ -8,6 +8,6 @@
 .project-container .project-contents {
 
 	padding-top:5px;
-	padding-left:15px;
+	padding-left:30px;
 
 }

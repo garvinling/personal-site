@@ -91,7 +91,6 @@ function addEventListeners() {
 	   		if(index === 1) 
 	   			li[i].classList.add('project-selected');
 
-
 			li[i].onclick = function(){
 
 				if(index > 0 ){
@@ -110,7 +109,6 @@ function addEventListeners() {
 	for(var i = 0 ; i < workli.length ; i ++) {
 
 		(function(index){
-			console.log(index)
 				workli[i].onclick = function(){
 
 					if(index > 0) {
